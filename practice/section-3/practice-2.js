@@ -1,5 +1,6 @@
 'use strict';
 
 function createUpdatedCollection(collectionA, objectB) {
-  return 'Implement the practice require, and begin changing code in this row';
+	var counter=0;
+  return collectionA.map(ele => {if(objectB["value"].includes(ele["key"])){ele["count"]-=((counter%3)+1); counter++} ;return ele});
 }
